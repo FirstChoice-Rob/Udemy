@@ -149,6 +149,7 @@ else
 }*/
 
 
+<<<<<<< HEAD
 // Truthy and falsy values & equality operators
 
 // Falsy values:undefined, null,0,'' Nan
@@ -221,3 +222,114 @@ if (height){
 
    
 }
+=======
+
+/**************************
+ If/ Else Ststements
+ 
+ var firstName = 'John';
+ var civilStatus = 'Single';
+
+ if (civilStatus === 'Married')
+ {
+    console.log(firstName + ' is married');
+ }
+ else
+ {
+console.log(firstName + ' is not married');
+ }
+
+ var isMarried = true
+
+ if (isMarried)
+ {
+    console.log(firstName + ' is married');
+ }
+ else
+ {
+console.log(firstName + ' is not married');
+ }*/
+
+
+ /**************************
+  Boolean Logic
+  */
+/*
+  var firstName = 'John';
+  var age = 20
+
+  if (age <13)
+  {
+      console.log(firstName + ' is a boy');      
+  }
+  else if(age >= 13 && age < 20)
+  {
+    console.log(firstName + ' is a teenage');
+  } 
+  else if(age >=20 && age <30)
+  {
+    console.log(firstName + ' is a young man');
+  }
+  else
+  {
+      console.log(firstName + ' is a man');
+  }*/
+
+
+
+  /********************************** 
+   * The Ternary Operator and switch statements
+  */
+
+  var firstName = 'John';
+  var age = 21;
+
+  //Ternary
+  age >= 18 ? console.log(firstName + ' drinks beers')
+  :console.log(firstName + ' drinks juice');
+
+  var drink = age >= 18 ? 'Beer' : 'Juice';
+
+  console.log(firstName + ' drinks ' + drink );
+
+
+  var job ='Instructor';
+  //Switch
+  switch(job)
+  {
+      case 'Teacher':
+      case 'Instructor':
+      console.log(firstName + ' teaches kids how to code.');
+      break;
+
+      case 'driver':
+      console.log(firstName + ' drive a uber in Berlin.');
+      break;
+
+      case 'diver':
+      console.log(firstName + ' dives in Thailand.');
+      break;
+
+      default:
+      console.log(firstname + 'has an undefinded job');
+
+  }
+
+  switch(true)
+  {
+        case age <13 :
+        console.log(firstName + ' is a boy');
+        break;
+
+        case age >=13 && age < 20:
+        console.log(firstName + ' is a teenager'); 
+        break;
+
+        case age >= 20 && age <30:
+        console.log(firstName + ' is a young man');  
+        break;
+
+        default:
+        console.log(firstName + ' is a man'); 
+  }
+>>>>>>> 090cdf97f943195adf2e59ad8cf269cc4f01309d
