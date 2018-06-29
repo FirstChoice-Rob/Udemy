@@ -126,7 +126,7 @@ console.log(x,y);
  * Coding Challenge 1
 */
 
-
+/*
 var personOneName = prompt("What is the First Persons Name?")
 var personOneHeight = prompt("What is " + personOneName +'s Height in meters')
 var personOneKG = prompt("What is " + personOneName +'s Weight in KG')
@@ -146,4 +146,57 @@ if (highestBMi = PersonOneBMI)
 else
 {   
     alert(personTwoName +' has a higher BMI ('+ PersonTwoBMI +') than ' + personOneName +"'s BMI("+ PersonOneBMI +')');
-}
+}*/
+
+
+
+/**************************
+ If/ Else Ststements
+ 
+ var firstName = 'John';
+ var civilStatus = 'Single';
+
+ if (civilStatus === 'Married')
+ {
+    console.log(firstName + ' is married');
+ }
+ else
+ {
+console.log(firstName + ' is not married');
+ }
+
+ var isMarried = true
+
+ if (isMarried)
+ {
+    console.log(firstName + ' is married');
+ }
+ else
+ {
+console.log(firstName + ' is not married');
+ }*/
+
+
+ /**************************
+  Boolean Logic
+  */
+
+  var firstName = 'John';
+  var age = 20
+
+  if (age <13)
+  {
+      console.log(firstName + ' is a boy');      
+  }
+  else if(age >= 13 && age < 20)
+  {
+    console.log(firstName + ' is a teenage');
+  } 
+  else if(age >=20 && age <30)
+  {
+    console.log(firstName + ' is a young man');
+  }
+  else
+  {
+      console.log(firstName + ' is a man');
+  }
