@@ -180,7 +180,7 @@ console.log(firstName + ' is not married');
  /**************************
   Boolean Logic
   */
-
+/*
   var firstName = 'John';
   var age = 20
 
@@ -199,4 +199,62 @@ console.log(firstName + ' is not married');
   else
   {
       console.log(firstName + ' is a man');
+  }*/
+
+
+
+  /********************************** 
+   * The Ternary Operator and switch statements
+  */
+
+  var firstName = 'John';
+  var age = 21;
+
+  //Ternary
+  age >= 18 ? console.log(firstName + ' drinks beers')
+  :console.log(firstName + ' drinks juice');
+
+  var drink = age >= 18 ? 'Beer' : 'Juice';
+
+  console.log(firstName + ' drinks ' + drink );
+
+
+  var job ='Instructor';
+  //Switch
+  switch(job)
+  {
+      case 'Teacher':
+      case 'Instructor':
+      console.log(firstName + ' teaches kids how to code.');
+      break;
+
+      case 'driver':
+      console.log(firstName + ' drive a uber in Berlin.');
+      break;
+
+      case 'diver':
+      console.log(firstName + ' dives in Thailand.');
+      break;
+
+      default:
+      console.log(firstname + 'has an undefinded job');
+
+  }
+
+  switch(true)
+  {
+        case age <13 :
+        console.log(firstName + ' is a boy');
+        break;
+
+        case age >=13 && age < 20:
+        console.log(firstName + ' is a teenager'); 
+        break;
+
+        case age >= 20 && age <30:
+        console.log(firstName + ' is a young man');  
+        break;
+
+        default:
+        console.log(firstName + ' is a man'); 
   }
