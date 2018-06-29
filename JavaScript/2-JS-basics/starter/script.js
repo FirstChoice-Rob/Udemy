@@ -126,7 +126,7 @@ console.log(x,y);
  * Coding Challenge 1
 */
 
-
+/*
 var personOneName = prompt("What is the First Persons Name?")
 var personOneHeight = prompt("What is " + personOneName +'s Height in meters')
 var personOneKG = prompt("What is " + personOneName +'s Weight in KG')
@@ -146,4 +146,78 @@ if (highestBMi = PersonOneBMI)
 else
 {   
     alert(personTwoName +' has a higher BMI ('+ PersonTwoBMI +') than ' + personOneName +"'s BMI("+ PersonOneBMI +')');
+}*/
+
+
+// Truthy and falsy values & equality operators
+
+// Falsy values:undefined, null,0,'' Nan
+// Truth values: All NOT falsy values
+/*
+var height;
+height = 23;
+if (height){
+    console.log('Variable is defined');
+    }
+    else{
+        console.log("variable is not definded");
+    }
+
+
+
+    // Equality Variable
+
+    if (height == '23')
+    {
+        console.log("The == operator does type coercion!");
+    }
+
+    if (height === '23')
+    {
+        console.log("The === operator does type coercion!");
+    }
+    else
+    {
+        console.log("The === operator does NOT DO type coercion!");
+    }*/
+
+
+
+
+    // code Challenge 2
+
+ var teamOneScore = new Array();
+ var teamTwoScore =  new Array();
+ 
+ var teamOneAvg;
+ var teamTwoAvg;
+ 
+ teamOneScore[0]= parseInt(prompt("Enter John's teams 1st match score."));
+ teamOneScore[1] =parseInt(prompt("Enter John's teams 2nd match score."));
+ teamOneScore[2] = parseInt(prompt("Enter John's teams 3rd match score."));
+
+ teamTwoScore[0]= parseInt(prompt("Enter Mark's teams 1st match score."));
+ teamTwoScore[1] =parseInt(prompt("Enter Mark's teams 2nd match score."));
+ teamTwoScore[2] = parseInt(prompt("Enter Mark's teams 3rd match score."));
+
+
+  teamOneAvg = teamOneScore.reduce((a,b) => a + b,0) / teamOneScore.length;  
+  teamTwoAvg = teamTwoScore.reduce((a,b) => a + b,0) / teamTwoScore.length;
+
+  
+  switch(true)
+{
+    case teamOneAvg > teamTwoAvg:
+    alert("John's Team average of " + teamOneAvg + " is higher than Mark's Teams average of " + teamTwoAvg)
+    break;
+
+    case teamOneAvg < teamTwoAvg:
+    alert("John's Team average of " + teamOneAvg + " is lower than Mark's Teams average of " + teamTwoAvg)
+    break;
+
+    default:
+    alert("Both teams have the same average score of "  + teamOneAvg);
+   
+
+   
 }
